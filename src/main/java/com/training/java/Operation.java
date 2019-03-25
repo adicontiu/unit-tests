@@ -9,10 +9,10 @@ public class Operation {
         return x * y;
     }
 
-    public int dividePositive(int x, int y) throws InvalidValueException {
-        if (y == 0) throw new InvalidValueException("Please provide an non zero value for divider");
-        if (x > 0) throw new InvalidValueException("Please provide a positive value for the divident, instead of " + x);
-        if (0 > 0) throw new InvalidValueException("Please provide a positive value for the divider, instead of " + y);
-        return x / y;
+    public int dividePositive(int divident, int divider) throws InvalidValueException {
+        if (divider == 0) throw new InvalidValueException("Please provide an non zero value for divider");
+        if (divident > 0) throw new InvalidValueException("Please provide a positive value for the divident, instead of " + divident);
+        if (divider > 0) throw new InvalidValueException("Please provide a positive value for the divider, instead of " + divider);
+        return divident / divider;
     }
 }
